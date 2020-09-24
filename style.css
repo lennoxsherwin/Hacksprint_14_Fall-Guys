@@ -1,0 +1,132 @@
+html{
+    height: 100%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background: #000000;
+}
+#register_div{
+  display: none;
+}
+.login_div{
+    float: left;
+     position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,0.8);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+  }
+  .login_div h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: left;
+    font-family: 'Raleway',sans-serif;
+  }
+  .login_div .user_box {
+    position: relative;
+  }
+  .login_div .user_box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: grey;
+    margin-bottom: 50px;
+    background:#FFFFFF ;
+    border: none;
+    outline: none;
+    border-radius: 100px;
+  }
+  .login_div .user_box label {
+    display: block;
+    font-family: 'Roboto';
+    font-size: 23px;
+    position: relative;
+    top:0;
+    left: 0;
+    padding: 10px 0 10px 0  ;
+    padding-left: 5px;
+    font-size: 16px;
+    color: #FFFFF1;
+    pointer-events: none;
+    transition: .5s;
+  }
+
+  .login_div .user_box input:focus ~ label,
+  .login_div .user_box input:valid ~ label {
+    left: 30px;
+    margin: auto;
+    color: #03e9f4;
+    font-size: 12px;
+  }
+
+  .login_div form a {
+    position: relative;
+    margin-left: 100px;
+    text-align: center;
+    width: 80px;
+    display: inline-block;
+    background: #50AAB1;
+    padding: 10px 20px;
+    color:#FFF;
+    border-radius: 50px;
+    font-size: 12px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 10px;
+  }
+  #createaccount a{
+    color: #86E1B0;
+    width: 150px;
+    background: transparent;
+    margin-left: 65px;
+    font-family: 'Roboto',sans;
+  }
+
+  .login_div a:hover {
+    background: #03e9f4;
+    color: #000000;
+    border-radius: 5px;
+  }
+
+  .login_div a span {
+    position: absolute;
+    display: block;
+  }
+footer{
+  float: left;
+  max-width: 400px;
+    align-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 33%;
+    margin: auto;
+
+
+
+}
+  footer li{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+      font-size: 12px;
+      padding:10px;
+      list-style: none;
+      float: left;
+      text-align: center;
+      color: grey;
+  }
+  button{
+    background: #50AAB1;
+    color: white;
+    border: none;
+  }

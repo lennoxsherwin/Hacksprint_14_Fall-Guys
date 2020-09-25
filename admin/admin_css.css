@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+}
+body{
+  color: #86E1B0;
+  background-color: #10182D;
+  max-width: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scrollbar-color: gray #10182D;
+}
+a{
+  color: #86E1B0;
+}
+form{
+  padding: 10px;
+}
+input{
+  min-width: 100%;
+  background: #86E1B04A 0% 0% no-repeat padding-box;
+  color: #F5EEEE;
+}
+.search_bar{
+  min-width: 100%;
+  height: 45px;
+  padding-left: 4%;
+  padding-right: 4%;
+  border-radius: 34px;
+}
+.heading{
+  padding: 3%;
+}
+thead{
+  width: 100%;
+height: 50px;
+}
+#close_button{
+  position: absolute;
+  top: 5vh;
+  right: 10vh;
+}
+#screen_table{
+  height: 450px;
+  max-height: 450px;
+  overflow: scroll;
+  padding: 2%;
+}
+#song_table{
+  height: 450px;
+  max-height: 450px;
+  overflow-y: scroll;
+}
+table{
+  width: 100%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+thead{
+  margin-bottom: 3%;
+}
+.table_head{
+  background-color: #10182D;
+}
+td{
+  padding: 5px;
+}
+button{
+  margin-top:0px;
+}
+span{
+  display:block;
+  /*overflow: hidden;*/
+  padding:0 4px 0 6px;
+}
+input{
+  width:100%;
+  border:none;
+  margin: 5px 0;
+}
+.footer{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: #442727;
+}
+.add_screen_row{
+  margin-right: 20px;
+}
+#button_field{
+  position: fixed;
+  width: 100%;
+}
+#new_screen_div{
+  display: none;
+  float: right;
+  height: 450px;
+  max-height: 450px;
+  overflow: scroll;
+}
+#upload_song_div{
+  display: none;
+}
+#fields_from_ajax{
+  display: none;
+  float: right;
+  height: 450px;
+  max-height: 450px;
+  width: 35%;
+  overflow: scroll;
+}
+#new_user_form{
+  display: none;
+  float: right;
+  height: 450px;
+  max-height: 450px;
+  width: 40%;
+  overflow: scroll;
+}
+#add_screen_heading{
+  display: none;
+  padding: 7px;
+}
+#make_changes_button{
+  display: none;
+}
+#assign_screens_button{
+  position: sticky;
+  bottom: 0;
+  padding: 5px;
+}
+#get_screen_name{
+  background-color: #af460f;
+}
+.topright {
+  position:inherit;
+  top: 0;
+  right: 0;
+}
+thead {
+  position: sticky;
+  top: 0;
+}

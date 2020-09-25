@@ -1,0 +1,244 @@
+*{
+  box-sizing: border-box;
+}
+body{
+    border:0;
+    margin:0;
+    box-sizing: border-box;
+    height: 100vh;
+    background: url(images/homebg.png);
+    background-size: cover;
+    padding:5vh;
+    overflow-x: hidden;
+    scrollbar-color: gray black;
+}
+#navigation{
+    width: 100%;
+    height: 60px;
+    background: black;
+    padding: 10px;
+    opacity: .7 ;
+    border-radius: 100px;
+    display: block;
+
+    justify-content: center;
+    align-items: top;
+
+}
+#burger{
+    padding-right:100px;
+    padding-top: 5px;
+}
+#burger div{
+    margin:5px;
+    width: 20px;
+    height: 2px;
+    background-color: white;
+}
+.logo  {
+    flex:1;
+    font-family: 'Raleway',sans-serif;
+    color: #16BA53;
+    left: 0;
+    font-weight: bolder;
+    letter-spacing: 0.2em;
+    font-size: 1.6em;
+}
+/* .container{
+    top: 0px;
+    left: 0px;
+    background-color: black;
+    opacity: 0.2;
+    background-size: cover;
+    z-index: 1;
+    height: 100vh;
+    width: 100vh;
+} */
+.searchbar{
+    border-radius: 30px;
+    color: aliceblue;
+    padding: 10px;
+    width: 200px;
+    height: fit-content;
+    background-color: #16BA53;
+    opacity: 1;
+    margin-right: 5vw;
+}
+.profile{
+    padding: 4px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+    background-color: #22ec62 ;
+}
+.profile img{
+    width: 100%;
+}
+h2{
+    padding: 1vh;
+    border-radius: 40px;
+    width: 70%;
+    font-family: 'Roboto',sans-serif;
+    color: #F8456E;
+    font-size: 2em;
+    text-shadow: 5px 5px 5px rgba(255, 255, 255, 0.7);
+    /*background-color: rgba(133, 36, 224, 0.7);*/
+    margin-left: 10vh;
+}
+#main_mood{
+    margin-left: 10vh;
+    width: 80%;
+    display: flex;
+}
+#main_mood div{
+    border-radius: 30px;
+    width: 150px;
+    height: 150px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+}
+#main_mood div:hover{
+    transition:  0.2s ease-in;
+    width: 175px;
+    height: 175px;
+
+}
+.moods1{
+    font-family: 'Raleway',sans-serif;
+    color: crimson;
+    font-size: 2em;
+    text-align: center;
+    background: #45F2F8 0% 0% no-repeat padding-box;
+    box-shadow: 6px 6px 6px #F8456E;
+}
+.moods2{
+    font-family: 'Raleway',sans-serif;
+    color: crimson;
+    font-size: 2em;
+    text-align: center;
+    background: #EFC2CD 0% 0% no-repeat padding-box;
+box-shadow: 6px 6px 6px #F8456E;
+
+}
+.moods3{
+    font-family: 'Raleway',sans-serif;
+    color: crimson;
+    font-size: 2em;
+    text-align: center;
+    background: #86E1B0 0% 0% no-repeat padding-box;
+    box-shadow: 6px 6px 6px #F8456E;
+}
+.moods4{
+    font-family: 'Raleway',sans-serif;
+    color: crimson;
+    font-size: 2em;
+    text-align: center;
+    background: #D9DC81 0% 0% no-repeat padding-box;
+box-shadow: 6px 6px 6px #F8456E;
+}
+.moods5{
+    font-family: 'Raleway',sans-serif;
+    color: crimson;
+    font-size: 2em;
+    text-align: center;
+    background: #AAB5D4 0% 0% no-repeat padding-box;
+    box-shadow: 6px 6px 6px #F8456E;
+}
+ul{
+    margin: 0;
+}
+ul li{
+    list-style-position: unset;
+    margin-bottom: 2em;
+    margin-left: 7vh;
+    height: 4em;
+    width: 70%;
+    border-radius: 50px;
+    background: rgba(23, 18, 27, 0.6);
+    list-style: none;
+}
+thead{
+  width: 100%;
+height: 50px;
+color: white;
+}
+table{
+  width: 80%;
+  margin-left: 10vh;
+}
+thead{
+  margin-bottom: 3%;
+}
+.table_head{
+
+}
+tr{
+  border-radius: 28px;
+
+}
+td{
+  background-color: #cc99ff;
+  margin: 5px;
+  padding: 5px;
+}
+.footer  {
+    position: fixed;
+    bottom: 5px;
+    left: 0;
+    border-radius: 140px;
+    margin-right: 10vh;
+    margin-left: 20vh;
+    height: 80px;
+    width: 60%;
+    background-color: #ffe2e2;
+    opacity: .8;
+    display: flex;
+    align-items: baseline;
+    width: 70%;
+}
+.songinfo{
+    display: block;
+    width: 50%;
+    height: 100%;
+}
+.songdata{
+display: block;
+width: 100%;
+margin-left: 10vh;
+}
+.song_name{
+    font-family: 'Roboto',sans-serif;
+    font-size: 1.3em;
+    font-weight: bolder;
+    display: block;
+}
+.artist_name{
+  display: inline;
+    font-family: 'Roboto',sans-serif;
+}
+.song_image img{
+    width: 60px;
+    height: 60px;
+    margin:20px;
+    margin-left: vh;
+    border-radius: 50px;
+}
+.footer div{
+  width: 20%;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.media_player{
+
+}
+audio{
+  margin-top: 20px;
+  margin-right: 50%;
+}
+.media_player i{
+
+    padding-left: 20px;
+}
+a{
+  text-decoration: none;
+}

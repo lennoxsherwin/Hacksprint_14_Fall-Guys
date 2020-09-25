@@ -1,0 +1,128 @@
+body{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    background: #10182D;
+    padding: 20vh;
+    padding-top: 10vh;
+}
+
+#admin_greeting_div{
+    display: flex;
+    width: 100%;
+    float: left;
+    align-items: baseline;
+}
+#admin_dashboard{
+    flex:1;
+    width: 50%;
+    right: 0;
+}
+#backbutton{
+    text-align: right;
+width: 50%;
+color: #16BA53;
+}
+#backbutton img{
+    height: 2em;
+}
+#admin_dashboard h1{
+    font-family: 'Raleway',sans-serif;
+    color:#16BA53 ;
+    font-size: 3em;
+}
+#manimg{
+    padding-top: 10vh;
+    width: 50%;
+    float: left;
+}
+#manimg img{
+    width: 80%;
+}
+#admin_links_div{
+padding-top: 3vh;
+width: 50%;
+height: 70vh;
+float: left;
+}
+#logout {
+    position: absolute;
+    top: 5vh;
+    right: 10vh;
+    color:#16BA53 ;
+}
+#logout i{
+    color: #16BA53;
+}
+#admin_links_div ul{
+display: flex;
+flex-direction: column;
+align-items: center;
+left: 0;
+}
+#admin_links_div ul li {
+    box-shadow:5px 5px 10px rgba(248,69,110,.4);
+    border-radius: 40px;
+    margin: 10px;
+    text-align: left;
+    width: 70%;
+    padding: 20px;
+    padding-left: 30px;
+    list-style: none;
+    border: #F8456E 1px solid;
+}
+ul li a{
+
+    text-decoration: none;
+    color:#F8456E ;
+    font-size: 1.6em;
+    font-family: 'Roboto', sans-serif;
+}
+#admin_links_div ul :hover{
+    background:  #F8456E;
+    color: azure;
+}
+@media screen and (max-width:1024px){
+    #admin_dashboard h1{
+        font-size: 2em;
+    }
+    #manimg img{
+        width: 100%;
+    }
+    body{
+        padding:10vh;
+    }
+    #manimg{
+        width: 100%;
+    }
+    #backbutton img{
+        height: 1.4em;
+    }
+    #admin_links_div{
+        width: 100%;
+        margin: 0px;
+    }
+    #admin_links_div ul li{
+        font-size: 0.8em;
+        text-align: center;
+    }
+
+}
+@media screen and (max-width:768px){
+    #admin_dashboard h1{
+        font-size: 1.8em;
+    }
+    #admin_dashboard{
+        width: 70%;
+    }
+    #backbutton{
+    width: 30%;
+    }
+}
+
+@media screen and (max-width:440px){
+     ul li a {
+        font-size: .9em;
+        text-align: center;
+    }
+}

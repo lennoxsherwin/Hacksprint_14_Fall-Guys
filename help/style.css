@@ -1,0 +1,21 @@
+body{
+    margin: 5vh;
+    background-color:white;
+    height: 100vh;
+}
+#title{
+    width: 100%;
+}
+h1{
+    text-align: right;
+    color: skyblue;
+    font-size: 5vw;
+    
+
+}
+#img {
+    width: 90vw;
+}
+#img img{
+    width: 100%;
+}

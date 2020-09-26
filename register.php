@@ -50,7 +50,7 @@ if(isset($_POST['full_name']) || isset($_POST['user_id'])){
                 $_SESSION['user_id'] = $pdo->lastInsertId();
                 $_SESSION['user_type_id'] = 2;
                 $_SESSION['full_name'] = $_POST['nfull_name'];
-                header('Location: client/music_player.php');
+                header('Location: client/user_dashboard/dash.php');
                 return;
             }
       }
@@ -72,7 +72,7 @@ if(isset($_POST['full_name']) || isset($_POST['user_id'])){
       <!-- <h1>Music<br> for every mood.</h1> -->
     </div>
 
-    <div id="logout" style="display: none;"></div>
+    <div id="logout"></div>
 
     <div id = register_div class="login_div">
       <h2>Register</h2>
@@ -109,7 +109,7 @@ if(isset($_POST['full_name']) || isset($_POST['user_id'])){
         </a>
         <br>
         <div id="createaccount">
-          <a href="login.php" onclick="hide_register_div()">Already have an Account?<br> Log In</a>
+          <a href="login.php">Already have an Account?<br> Log In</a>
 
         </div>
       </form>

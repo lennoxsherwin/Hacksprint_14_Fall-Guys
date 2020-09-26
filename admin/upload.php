@@ -17,15 +17,15 @@ if(isset($_POST['upload_song'])){
 
       //$file_ext = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
       $file_ext=strtolower(end(explode('.',$_FILES["song_file".$deleteid]['name'])));
-
-      /*if($_FILES["song_file".$deleteid]["type"] != "audio/mp3"){
+      $ext = "mp3";
+      if(strcmp($file_ext,$ext) != 0){
          $_SESSION['message'] = "Extension not allowed, please choose a MP3 file.";
          header('Location: song_master.php');
          return;
-      }*/
+      }
 
       /*if($file_size > 7340032){
-         $_SESSION['message'] = 'File size must be less than 7 MB';
+         $_SESSION['message'] = 'File size must be less than 20 MB';
          header('Location: song_master.php');
          return;
       }*/

@@ -27,8 +27,9 @@ $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <tbody class="table_head" id="myTable" class="fourth_color">
     <input hidden name="screen_id_from_ajax" value="<?= $q ?>"></input>
     <?php foreach ( $rows as $row ): ?>
-      <div style="border-radius:28px;margin-bottom:10px;">
+      <div style="border-radius:28px;margin-bottom:10px;width:100%;">
         <tr>
+
           <td scope="row" style="color:white;">
             <a href="<?= $row['song_path']?>" onclick="play_song('<?= $row['song_path']?>','<?= $row['song_name']?>','<?= $row['artist_name']?>')">
             <i style="color: #00008b;" class="fa fa-play-circle fa-3x" aria-hidden="true"></i>

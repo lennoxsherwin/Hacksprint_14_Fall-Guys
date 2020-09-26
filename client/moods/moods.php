@@ -1,6 +1,11 @@
 <?php
 session_start();
 require_once "util.php";
+
+$stmt = $pdo->query("SELECT mood_id,mood_name
+                       FROM mood
+                       WHERE effective_end_dt IS NULL");
+  $moods = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
 <html lang="en">
 <head>
@@ -8,38 +13,6 @@ require_once "util.php";
     <link href="style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&family=Roboto&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            // Change background image of a div by clicking on the button
-            $(".moods2").click(function() {
-                var imageUrl =  "images/2.png";
-
-                $("body").css("background-image", "url(" + imageUrl + ")");
-        ;
-            });
-            $(".moods1").click(function() {
-                var imageUrl =  "images/1.png";
-
-                $("body").css("background-image", "url(" + imageUrl + ")");
-
-            });
-            $(".moods3").click(function() {
-                var imageUrl =  "images/3.png";
-
-                $("body").css("background-image", "url(" + imageUrl + ")");
-            });
-            $(".moods4").click(function() {
-                var imageUrl =  "images/4.png";
-
-                $("body").css("background-image", "url(" + imageUrl + ")");
-            });
-            $(".moods5").click(function() {
-                var imageUrl =  "images/5.png";
-
-                $("body").css("background-image", "url(" + imageUrl + ")");
-            });
-        });
-    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -54,26 +27,27 @@ require_once "util.php";
                 <div class = "line 3"></div>
             </div>
             <div class="logo">hymn</div>
-            <div class="profile"><img src="images/Account Icon.png"></div>
+            <div id="logout">
+              <a href="/hymn/logout.php">
+              </div>
+            <i class="fa fa-sign-out fa-2x" aria-hidden="true"></i>
+            </a>
         </nav>
       </div>
+      <div>
+      <a href="/hymn/client/user_dashboard/dash.php">
+    <i class="fa fa-arrow-left fa-2x" aria-hidden="true"></i>
+    </a>
+  </div>
         <h2>Moods</h2>
         <div id ="main_mood">
-          <a href="" onclick="showSongs(1)">
-            <div class="moods1"> Happy</div>
+          <?php foreach ( $moods as $mood ): ?>
+
+          <a href="" onclick="showSongs(<?= $mood['mood_id']?>)">
+            <div class="moods1"> <?= $mood['mood_name']?></div>
           </a>
-          <a href="" onclick="showSongs(2)">
-            <div class="moods2">Sad</div>
-          </a>
-          <a href="" onclick="showSongs(3)">
-            <div class="moods3">Self</div>
-          </a>
-          <a href="" onclick="showSongs(4)">
-            <div class="moods4">Chill</div>
-          </a>
-          <a href="" onclick="showSongs(5)">
-            <div class="moods5">Study</div>
-          </a>
+
+          <?php endforeach;  ?>
         </div>
         <br><br>
         <h2>Songs</h2>
@@ -88,20 +62,20 @@ require_once "util.php";
        </div>
        <br><br><br><br><br><br><br><br><br><br><br>
 
-       <div class="footer d-flex justify-content-center">
+           <div class="footer d-flex justify-content-center">
+           <div id="song_info">
+               <div id="display_song_name" class="song_name">Keanu  Reaves</div><br>
+               <div id="display_artist_name"  class="artist_name">Logic</div>
+               </div>
+          <div id="media_player">
+             <audio controls="controls" id="audio_player">
+              <!--<source src="<?= $row['song_path']?>" type="audio/ogg" />-->
+              <source src="<?= $row['song_path']?>" type="audio/mpeg" />
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+        </div>
 
-                       <div id="display_song_name" style="float:left;" class="song_name">Keanu  Reaves</div><br>
-                       <div id="display_artist_name" style="" class="artist_name">Logic</div>
-
-                  <div id="media_player">
-                     <audio controls="controls" id="audio_player">
-                      <!--<source src="<?= $row['song_path']?>" type="audio/ogg" />-->
-                      <source src="<?= $row['song_path']?>" type="audio/mpeg" />
-                      Your browser does not support the audio element.
-                    </audio>
-                  </div>
-
-           </div>
 <script src="client_javascript.js"></script>
 </body>
 </html>

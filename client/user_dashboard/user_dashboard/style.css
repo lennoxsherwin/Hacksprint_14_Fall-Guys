@@ -1,0 +1,319 @@
+body{
+    border:0;
+    margin:0;
+    box-sizing: border-box;
+    height: 100vh;
+    background: url(images/homebg.png);
+
+    background-size: cover;
+    padding:5vh;
+    overflow-x: hidden;
+}
+nav{
+    width: 100%;
+    height: 80px;
+    background:transparent;
+    opacity: 1.0 ;
+    border-radius: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: top;
+
+}
+#burger{
+    padding-right:100px;
+}
+#burger div{
+    margin:5px;
+    width: 20px;
+    height: 2px;
+    background-color: white;
+}
+.logo  {
+    flex:1;
+    font-family: 'Raleway',sans-serif;
+    color: #16BA53;
+    left: 0;
+    font-weight: bolder;
+    letter-spacing: 0.2em;
+    font-size: 1.6em;
+}
+/* .container{
+    top: 0px;
+    left: 0px;
+    background-color: black;
+    opacity: 0.2;
+    background-size: cover;
+    z-index: 1;
+    height: 100vh;
+    width: 100vh;
+} */
+.searchbar{
+    border-radius: 30px;
+    color: aliceblue;
+    padding: 10px;
+    width: 200px;
+    height: fit-content;
+    background-color: #16BA53;
+    opacity: 1;
+    margin-right: 5vw;
+}
+.profile{
+    padding: 4px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+    background-color: #22ec62 ;
+}
+.profile img{
+    width: 100%;
+}
+h2{
+    padding: 1vh;
+    border-radius: 40px;
+    width: 70%;
+    font-family: 'Roboto',sans-serif;
+    color: #F8456E;
+    font-size: 2em;
+    text-shadow: 5px 5px 5px rgba(255, 255, 255, 0.7);
+    /*background-color: rgba(133, 36, 224, 0.7);*/
+    margin-left: 10vh;
+}
+#main_mood_1{
+    margin-left: 10vh;
+    height: 200px;
+    background-color: white;
+    box-shadow: 10px 10px 10px #F8456E ;
+    border-radius: 20px;
+    width: 80vw;
+    display: flex;
+    flex-wrap: wrap;
+    background:url(images/moods.jpg);
+    background-size: contain;
+    background-repeat: repeat-x;
+    height:  200px;
+}
+.float{
+    display: flex;
+}
+#main_mood_2{
+    margin-left: 10vh;
+    background-color: white;
+    box-shadow: 10px 10px 10px #F8456E ;
+    border-radius: 20px;
+    height: 200px;
+    width: 80vw;
+    display: flex;
+    flex-wrap: wrap;
+    background: url(images/artists.jpg);
+    background-size: contain;
+    background-repeat: repeat-x;
+}
+
+#main_mood_3{
+    margin-left: 10vh;
+    background-color: white;
+    box-shadow: 10px 10px 10px #F8456E ;
+    border-radius: 20px;
+    width: 80vw;
+    display: flex;
+    flex-wrap: wrap;
+    background: url(images/genre.jpg);
+    background-size: contain;
+    background-repeat: repeat-x;
+    height:  200px;
+}
+
+
+#main_mood div:hover{
+    transition:  0.2s ease-in;
+    width: 175px;
+    height: 175px;
+
+}
+.moods1{
+    font-family: 'Raleway',sans-serif;
+    color: crimson;
+    font-size: 2em;
+    text-align: center;
+    background: #45F2F8 0% 0% no-repeat padding-box;
+    box-shadow: 6px 6px 6px #F8456E;
+}
+.moods2{
+    font-family: 'Raleway',sans-serif;
+    color: crimson;
+    font-size: 2em;
+    text-align: center;
+    background: #EFC2CD 0% 0% no-repeat padding-box;
+box-shadow: 6px 6px 6px #F8456E;
+
+}
+.moods3{
+    font-family: 'Raleway',sans-serif;
+    color: crimson;
+    font-size: 2em;
+    text-align: center;
+    background: #86E1B0 0% 0% no-repeat padding-box;
+    box-shadow: 6px 6px 6px #F8456E;
+}
+.moods4{
+    font-family: 'Raleway',sans-serif;
+    color: crimson;
+    font-size: 2em;
+    text-align: center;
+    background: #D9DC81 0% 0% no-repeat padding-box;
+box-shadow: 6px 6px 6px #F8456E;
+}
+.moods5{
+    font-family: 'Raleway',sans-serif;
+    color: crimson;
+    font-size: 2em;
+    text-align: center;
+    background: #AAB5D4 0% 0% no-repeat padding-box;
+    box-shadow: 6px 6px 6px #F8456E;
+}
+ul{
+    margin: 0;
+}
+ul li{
+    list-style-position: unset;
+    margin-bottom: 2em;
+    margin-left: 7vh;
+    height: 4em;
+    width: 70%;
+    border-radius: 50px;
+    background: rgba(23, 18, 27, 0.6);
+    list-style: none;
+}
+.footer  {
+    position: fixed;
+    padding: 20px;
+    bottom: 0px;
+    left: 0;
+    border-radius: 100px 100px 0px 0px;
+    margin-right: 15vw;
+    margin-left: 10vw;
+    height: 80px;
+    background-color: #ffe2e2;
+    opacity: .9;
+    display: flex;
+    width: 80%;
+    align-items: center;
+}
+
+.songdata{
+display: block;
+width: 100%;
+margin-left: 10vh;
+}
+.song_name{
+    font-family: 'Roboto',sans-serif;
+    font-size: 1.6em;
+    font-weight: bolder;
+    display: inline;
+}
+.artist_name{
+  display: inline;
+    font-family: 'Roboto',sans-serif;
+    font-size: 1.2em;
+}
+
+#song_info{
+    flex: 1;
+    margin-left: 5vw;
+}
+audio{
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.media_player i{
+
+    padding-left: 20px;
+}
+a{
+  text-decoration: none;
+}
+
+@media screen and (max-width:500px){
+    #main_mood_1{
+        margin-left: 5vh;
+    }
+    #main_mood_2{
+        margin-left: 5vh;
+    }
+    #main_mood_3{
+        margin-left: 5vh;
+    }
+    #main_mood{
+        margin-left: 5vh;
+    }
+    .artist_name{
+        padding: 1vw;
+    }
+    h2{
+        margin-left: 5vh;
+    }
+    .footer{
+        margin-left: 2vh;
+        flex-direction: column;
+        border-radius: 50px 50px 0 0;
+    }
+
+    .song_name{
+        text-align: center;
+        font-size: 1.2em;float: left;
+    }
+    .artist_name{
+        font-size: 1em;
+        float: left;
+    }
+    body{
+        width: 100vw;
+        background-position-x: -200px;
+    }
+    #main_mood div{
+        width: 100px;
+        height: 100px;
+        font-size: 1em;
+    }
+    #main_mood_1{
+        width: 60vw;
+        background-size: cover;
+     }
+     #main_mood_2{
+         width: 60vw;
+         background-size: cover;
+     }
+     #main_mood_3{
+        width:60vw;
+        background-size: cover;
+     }
+}
+
+
+@media screen and (max-width:900px){
+    .footer{
+        margin-left: 4vh;
+        flex-direction: column;
+        border-radius: 70px 70px 0px 0px;
+    }
+   
+    audio{
+        margin-left: 10vw;
+    }
+    #main_mood_1{
+       width: 70vw;
+       background-size:cover;
+    }
+    #main_mood_2{
+        width: 70vw;
+        background-size:cover;
+    }
+    #main_mood_3{
+       width:70vw;
+       background-size:cover;
+    }
+
+}

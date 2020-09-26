@@ -46,8 +46,6 @@ height: 70vh;
 float: left;
 }
 #logout {
-    position: absolute;
-    top: 5vh;
     right: 10vh;
     color:#16BA53 ;
 }
@@ -60,6 +58,7 @@ flex-direction: column;
 align-items: center;
 left: 0;
 }
+
 #admin_links_div ul li {
     box-shadow:5px 5px 10px rgba(248,69,110,.4);
     border-radius: 40px;

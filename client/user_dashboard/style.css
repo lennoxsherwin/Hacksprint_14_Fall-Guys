@@ -19,7 +19,7 @@ nav{
     flex-direction: row;
     justify-content: center;
     align-items: top;
-    
+
 }
 #burger{
     padding-right:100px;
@@ -80,24 +80,57 @@ h2{
     /*background-color: rgba(133, 36, 224, 0.7);*/
     margin-left: 10vh;
 }
-#main_mood{
+#main_mood_1{
     margin-left: 10vh;
-    width: 90%;
+    height: 200px;
+    background-color: white;
+    box-shadow: 10px 10px 10px #F8456E ;
+    border-radius: 20px;
+    width: 80vw;
     display: flex;
     flex-wrap: wrap;
+    background:url(images/moods.jpg);
+    background-size: contain;
+    background-repeat: repeat-x;
+    height:  200px;
 }
-#main_mood div{
-    border-radius: 30px;
-    width: 150px;
-    height: 150px;
-    margin-right: 50px;
-    margin-bottom: 20px;
+.float{
+    display: flex;
 }
+#main_mood_2{
+    margin-left: 10vh;
+    background-color: white;
+    box-shadow: 10px 10px 10px #F8456E ;
+    border-radius: 20px;
+    height: 200px;
+    width: 80vw;
+    display: flex;
+    flex-wrap: wrap;
+    background: url(images/artists.jpg);
+    background-size: contain;
+    background-repeat: repeat-x;
+}
+
+#main_mood_3{
+    margin-left: 10vh;
+    background-color: white;
+    box-shadow: 10px 10px 10px #F8456E ;
+    border-radius: 20px;
+    width: 80vw;
+    display: flex;
+    flex-wrap: wrap;
+    background: url(images/genre.jpg);
+    background-size: contain;
+    background-repeat: repeat-x;
+    height:  200px;
+}
+
+
 #main_mood div:hover{
     transition:  0.2s ease-in;
     width: 175px;
     height: 175px;
-    
+
 }
 .moods1{
     font-family: 'Raleway',sans-serif;
@@ -204,6 +237,15 @@ a{
 }
 
 @media screen and (max-width:500px){
+    #main_mood_1{
+        margin-left: 5vh;
+    }
+    #main_mood_2{
+        margin-left: 5vh;
+    }
+    #main_mood_3{
+        margin-left: 5vh;
+    }
     #main_mood{
         margin-left: 5vh;
     }
@@ -229,27 +271,49 @@ a{
     }
     body{
         width: 100vw;
-        background-position-x: -400px;
+        background-position-x: -200px;
     }
     #main_mood div{
         width: 100px;
         height: 100px;
         font-size: 1em;
     }
-    .logo{
-        text-shadow: 3px 3px 10px black;
-        
-    }
-
+    #main_mood_1{
+        width: 60vw;
+        background-size: cover;
+     }
+     #main_mood_2{
+         width: 60vw;
+         background-size: cover;
+     }
+     #main_mood_3{
+        width:60vw;
+        background-size: cover;
+     }
 }
-@media screen and (max-width:750){
+
+
+@media screen and (max-width:900px){
     .footer{
         margin-left: 4vh;
         flex-direction: column;
         border-radius: 70px 70px 0px 0px;
     }
+   
     audio{
         margin-left: 10vw;
     }
-    
+    #main_mood_1{
+       width: 70vw;
+       background-size:cover;
+    }
+    #main_mood_2{
+        width: 70vw;
+        background-size:cover;
+    }
+    #main_mood_3{
+       width:70vw;
+       background-size:cover;
+    }
+
 }

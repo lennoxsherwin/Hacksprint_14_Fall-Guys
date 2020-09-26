@@ -214,23 +214,7 @@ function pauseAudio() {
   function hide_div(id){
     document.getElementById(id).style.display="none";
   }
-  function doValidate() {
-        console.log('Validating...');
-        try {
-            addr = document.getElementById('user_name').value;
-            pw = document.getElementById('password').value;
-            console.log("Validating addr="+addr+" pw="+pw);
-            if (addr == null || addr == "" || pw == null || pw == "") {
-                alert("Both fields must be filled out");
-                return false;
-            }
-            return true;
-        } catch(e) {
-            return false;
-        }
-        return false;
-  }
-  /*window.onload = function() {
+  window.onload = function() {
      document.getElementById("logout").onclick = function() {
        var result = confirm("Are you sure you want to logout?");
        if(result)
@@ -238,7 +222,7 @@ function pauseAudio() {
        else
         return false;
      }
-   }*/
+   }
    function checkPermission(permission,id) {
      if(permission==0) {
        document.getElementById(id).style.display="none";

@@ -1,33 +1,29 @@
-*{
-  box-sizing: border-box;
-}
 body{
     border:0;
     margin:0;
     box-sizing: border-box;
     height: 100vh;
-    background: url(images/homebg.png);
+    background: url(images/4.png);
+
     background-size: cover;
     padding:5vh;
     overflow-x: hidden;
-    scrollbar-color: gray black;
 }
-#navigation{
+::-webkit-scrollbar{width:0px;background: transparent}
+nav{
     width: 100%;
-    height: 60px;
-    background: black;
-    padding: 10px;
-    opacity: .7 ;
+    height: 80px;
+    background:transparent;
+    opacity: 1.0 ;
     border-radius: 100px;
-    display: block;
-
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: top;
 
 }
 #burger{
     padding-right:100px;
-    padding-top: 5px;
 }
 #burger div{
     margin:5px;
@@ -87,8 +83,10 @@ h2{
 }
 #main_mood{
     margin-left: 10vh;
-    width: 80%;
+    width: 90%;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 #main_mood div{
     border-radius: 30px;
@@ -96,6 +94,8 @@ h2{
     height: 150px;
     margin-right: 50px;
     margin-bottom: 20px;
+    padding-top: 30px;
+    font-size: 1.6em;
 }
 #main_mood div:hover{
     transition:  0.2s ease-in;
@@ -157,6 +157,55 @@ ul li{
     background: rgba(23, 18, 27, 0.6);
     list-style: none;
 }
+.footer  {
+    position: fixed;
+    padding: 20px;
+    bottom: 0px;
+    left: 0;
+    border-radius: 100px 100px 0px 0px;
+    margin-right: 15vw;
+    margin-left: 10vw;
+    height: 80px;
+    background-color: #ffe2e2;
+    opacity: .9;
+    display: flex;
+    width: 80%;
+    align-items: center;
+}
+
+.songdata{
+display: block;
+width: 100%;
+margin-left: 10vh;
+}
+.song_name{
+    font-family: 'Roboto',sans-serif;
+    font-size: 1.6em;
+    font-weight: bolder;
+    display: inline;
+}
+.artist_name{
+  display: inline;
+    font-family: 'Roboto',sans-serif;
+    font-size: 1.2em;
+}
+
+#song_info{
+    flex: 1;
+    margin-left: 5vw;
+}
+audio{
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.media_player i{
+
+    padding-left: 20px;
+}
+a{
+  text-decoration: none;
+}
 thead{
   width: 100%;
 height: 50px;
@@ -169,76 +218,64 @@ table{
 thead{
   margin-bottom: 3%;
 }
-.table_head{
-
-}
 tr{
   border-radius: 28px;
-
+  margin: 5px;
 }
 td{
   background-color: #cc99ff;
+  opacity: .8;
   margin: 5px;
   padding: 5px;
 }
-.footer  {
-    position: fixed;
-    bottom: 5px;
-    left: 0;
-    border-radius: 140px;
-    margin-right: 10vh;
-    margin-left: 20vh;
-    height: 80px;
-    width: 60%;
-    background-color: #ffe2e2;
-    opacity: .8;
-    display: flex;
-    align-items: baseline;
-    width: 70%;
-}
-.songinfo{
-    display: block;
-    width: 50%;
-    height: 100%;
-}
-.songdata{
-display: block;
-width: 100%;
-margin-left: 10vh;
-}
-.song_name{
-    font-family: 'Roboto',sans-serif;
-    font-size: 1.3em;
-    font-weight: bolder;
-    display: block;
-}
-.artist_name{
-  display: inline;
-    font-family: 'Roboto',sans-serif;
-}
-.song_image img{
-    width: 60px;
-    height: 60px;
-    margin:20px;
-    margin-left: vh;
-    border-radius: 50px;
-}
-.footer div{
-  width: 20%;
-  margin-right: 10px;
-  margin-left: 10px;
-}
-.media_player{
+
+@media screen and (max-width:500px){
+    #main_mood{
+        margin-left: 5vh;
+    }
+    .artist_name{
+        padding: 1vw;
+    }
+    h2{
+        margin-left: 5vh;
+    }
+    .footer{
+        margin-left: 2vh;
+        flex-direction: column;
+        border-radius: 50px 50px 0 0;
+    }
+
+    .song_name{
+        text-align: center;
+        font-size: 1.2em;float: left;
+    }
+    .artist_name{
+        font-size: 1em;
+        float: left;
+    }
+    body{
+        width: 100vw;
+        background-position-x: -400px;
+    }
+    #main_mood div{
+        width: 100px;
+        height: 100px;
+        font-size: 1em;
+    }
+    .logo{
+        text-shadow: 3px 3px 10px black;
+
+    }
 
 }
-audio{
-  margin-top: 20px;
-  margin-right: 50%;
-}
-.media_player i{
+@media screen and (max-width:750){
+    .footer{
+        margin-left: 4vh;
+        flex-direction: column;
+        border-radius: 70px 70px 0px 0px;
+    }
+    audio{
+        margin-left: 10vw;
+    }
 
-    padding-left: 20px;
-}
-a{
-  text-decoration: none;
 }

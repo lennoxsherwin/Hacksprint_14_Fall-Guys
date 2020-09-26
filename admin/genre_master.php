@@ -121,8 +121,8 @@ for($i=1 ; $i <= $screen_count ; $i++) {
   <h1>Define Genre(Genre Master)</h1>
 </div>
 <div id="close_button">
-  <a href="/hymn/admin/admin_dash/admin_dashboard.html">
-<i class="fa fa-times fa-5x" aria-hidden="true"></i>
+  <a href="/hymn/admin/admin_dash/admin_dashboard.php">
+<i class="fa fa-times fa-3x" aria-hidden="true"></i>
 </a>
 </div>
 <div class="">

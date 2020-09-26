@@ -107,13 +107,11 @@ if(isset($_POST['edit'])) {
 
   <div id="navbar"></div>
   <div class="second_color heading">
-    <a href="/hymn/admin/uploaded_songs/Oru-Kal.mp3">
   <h1>Song Master(Upload and Modify Songs)</h1>
-  </a>
 </div>
 <div id="close_button">
-  <a href="/hymn/admin/admin_dash/admin_dashboard.html">
-<i class="fa fa-times fa-5x" aria-hidden="true"></i>
+  <a href="/hymn/admin/admin_dash/admin_dashboard.php">
+<i class="fa fa-times fa-3x" aria-hidden="true"></i>
 </a>
 </div>
 <div class="">
@@ -280,19 +278,19 @@ if(isset($_POST['edit'])) {
     <input type="file" class="form-control-sm" id="song_file@COUNT@" name="song_file@COUNT@">
     </td>
     <td>
-      <input type="text" class="form-control-sm" name="song_name@COUNT@" maxlength="15" placeholder="Song Name"></input>
+      <input type="text" class="form-control-sm" name="song_name@COUNT@" maxlength="50" placeholder="Song Name"></input>
     </td>
     <td>
-      <input type="text" class="form-control-sm auto_artist" name="artist_name@COUNT@" maxlength="30" placeholder="Artist">
+      <input type="text" class="form-control-sm auto_artist" name="artist_name@COUNT@" maxlength="" placeholder="Artist">
     </td>
     <td>
-      <input type="text" class="form-control-sm auto_genre" name="genre_name@COUNT@" maxlength="30" placeholder="Genre">
+      <input type="text" class="form-control-sm auto_genre" name="genre_name@COUNT@" maxlength="" placeholder="Genre">
     </td>
     <td>
-      <input type="text" class="form-control-sm auto_mood" required name="mood_name@COUNT@" maxlength="30" placeholder="Mood">
+      <input type="text" class="form-control-sm auto_mood" required name="mood_name@COUNT@" maxlength="" placeholder="Mood">
     </td>
     <td>
-      <input type="text" class="form-control-sm" required name="song_description@COUNT@" maxlength="20" placeholder="Song Description">
+      <input type="text" class="form-control-sm" required name="song_description@COUNT@" maxlength="" placeholder="Song Description">
     </td>
   </tr>
 </script>

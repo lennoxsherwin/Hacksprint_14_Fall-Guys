@@ -236,6 +236,8 @@ td{
 @media screen and (max-width:500px){
     #main_mood{
         margin-left: 5vh;
+        max-height: 40%;
+        overflow-y: scroll;
     }
     .artist_name{
         padding: 1vw;
@@ -247,11 +249,14 @@ td{
         margin-left: 2vh;
         flex-direction: column;
         border-radius: 50px 50px 0 0;
+        background-color: rgba(255,255,255,0.8);
+        padding-top: 10px;
     }
 
     .song_name{
         text-align: center;
         font-size: 1.2em;float: left;
+        
     }
     .artist_name{
         font-size: 1em;
@@ -259,7 +264,6 @@ td{
     }
     body{
         width: 100vw;
-        background-position-x: -400px;
     }
     #main_mood div{
         width: 100px;
@@ -267,12 +271,14 @@ td{
         font-size: 1em;
     }
     .logo{
-        text-shadow: 3px 3px 10px black;
 
+    }
+    table{
+      margin-left: 5vh;
     }
 
 }
-@media screen and (max-width:750){
+@media screen and (max-width:750px){
     .footer{
         margin-left: 4vh;
         flex-direction: column;
